@@ -1,0 +1,295 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    /* height: 100px; */
+    background: linear-gradient(#0F2533,#0E3343);
+    display: flex;
+    padding-bottom: 30px;
+    justify-content: space-evenly;
+}
+header .logo h3{
+    color: #EAF3F8;
+    font-weight: bold;
+    padding-top: 30px;
+}
+header .services{
+    width: 40%;
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+header .services h4{
+    color: #9BB0B4;
+    cursor: pointer;
+}
+.registeration { 
+    width: 14%;
+    display: flex;
+    justify-content: space-between;
+}
+.registeration .login button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-top: 30px;
+}
+.registeration .login button h4{
+    color: white;
+}
+.registeration .signin button{
+    width: 80px;
+    /* padding-top: 30px; */
+    height: 35px;
+    border-radius: 10%;
+    border: none;
+    margin-top: 20px;
+    text-align: center;
+}
+.registeration .signin button h4{
+    color:#303F54;
+    padding-top: 2px;
+    cursor: pointer;
+    /* padding-left: 17px; */
+}
+
+@media screen and (max-width:780px) {
+    header .registeration{
+        width: 20%;
+    }
+    header .services{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+     header .services{
+        display: none;
+        /* width: 0%; */
+    }
+    header .registeration{
+        width:35%
+    }
+    /* header{
+        width: fit-content;
+    } */
+}
+
+.body1{
+    width: 100%;
+    /* height: 600px; */
+    background: #0E1B2E;
+}
+.nextCrypto{
+    width: 100%;
+    /* height: 400px; */
+    /* background: green; */
+    padding-top: 40px;
+    display: flex;
+}
+.nextCrypto .nextCryptoText{
+    width: 50%;
+    /* height: 350px; */
+    /* background: orchid; */
+}
+.nextCrypto .nextCryptoPic{
+    width: 50%;
+    /* height: 350px; */
+    /* background:yellow; */
+}
+.nextCrypto .nextCryptoPic img{
+    width: 100%;
+    height: 370px;
+    padding-right: 50px;
+}
+.nextCryptoText .head{
+    color: white;
+    padding-left: 120px;
+    word-spacing: 3px;
+    font-size: 20px;
+    /* background: gray; */
+}
+.nextCryptoText .head .colorText{
+    color: #27B4B4;
+    width: max-content;
+}
+.nextCryptoText .head span{
+    display: inline-block;
+}
+.nextCryptoText .para{
+    width: 100%;
+    /* background: yellow; */
+    /* height: 100px; */
+    margin-top: 40px;
+    padding-left: 120px;
+    padding-right: 100px;
+ 
+}
+.nextCryptoText .para p{
+    color: white;
+    font-size: 13px;
+}
+.search{
+    width: 90%;
+    margin-left: 10px;
+    margin-top: 30px;
+    display: flex;
+    position: relative;
+}
+
+.search input {
+    border: 5px solid #133443;
+    border-radius: 30px;
+    width: 100%;
+    padding-left: 30px;
+    margin-top: 30px;
+    height: 55px;
+    margin-left: 100px;
+    background-color: #0E1728;    
+}
+
+.search button {
+    border: 0px;
+    color: #9AA6B0;
+    cursor: pointer;
+    width: 30%;
+    position:absolute; 
+    right: 10px;
+    top: 10px;
+    bottom: 10px; 
+    border-radius: 25px;
+    background: #344356;
+    padding: 5px; 
+    margin-top: 30px;
+    height: 35px;
+}
+
+@media screen and (max-width:780px) {
+    .nextCryptoText .head{
+        font-size: 15px;
+        padding-left: 50px;
+    }
+    .nextCryptoText .para {
+        padding-left: 50px;
+        padding-right: 20px;
+    }
+    .nextCrypto .para p{
+        font-size: 15px;
+    }
+    .search input {
+        margin-left: 25px;
+        margin-top: 4px;
+    }
+    .search button {
+        margin-top: 4px;
+    }
+    .nextCrypto .nextCryptoPic img {
+        height: 304px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .nextCrypto{
+        flex-wrap: wrap;
+    }
+    .nextCrypto .nextCryptoText{
+        width: 100%;
+    }
+    .nextCrypto .nextCryptoPic {
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+.breaker{
+    /* background: gray; */
+    /* height: 200px; */
+    width: 100%;
+    margin-top: 30px;
+}
+.breaker img{
+    width: 100%;
+    height: 80px;
+}
+
+.cards{
+    width: 100%;
+    height: 500px;
+    /* background: ligh tcoral; */
+    margin-top: 50px;
+    display: flex; 
+    justify-content: space-around;
+    padding-left: 50px;
+}
+.card1{
+    width: 25%;
+    height: 300px;
+    border: none;
+    border-radius: 5%;
+    background: #192434;
+}
+
+.title{
+    width:100%;
+    /* background: olive; */
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.titlename h4{
+    color: white;
+}
+.title button{
+    background:  #344356;
+    color: #9AA6B0;
+    border: none;
+    width: 80px;
+    height: 25px;
+    margin-right: 20px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+.card1 .currency{
+    width: 100%;
+    height: 200px;
+    /* background: green; */
+    margin-top: 25px;
+    display: flex;
+}
+.currency .layer{
+    width: 100%;
+    height: 20%;
+    /* background: gray; */
+    display: flex;
+    justify-content: space-around;
+}
+.layer .currencyName{
+    width: 60%;
+    height: 100%;
+    /* background: brown; */
+    display: flex;
+}
+.layer .currencyPrice{
+    width: 30%;
+    height: 100%;
+    /* background: #27B4B4; */
+}
+
+.currencyName img{
+    width: 60%;
+    height: 100%;
+    margin-left: 10px;
+}
+
+.layer .text{
+    color: white;
+}
+.currencyPrice h4{
+    color: darkgray;
+}
+
