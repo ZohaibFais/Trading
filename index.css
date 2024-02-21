@@ -148,6 +148,7 @@ header .services h4{
     padding-left: 30px;
     margin-top: 30px;
     height: 55px;
+    color: white;
     margin-left: 100px;
     background-color: #0E1728;    
 }
@@ -327,8 +328,9 @@ header .services h4{
 
 .choose{
     width: 100%;
-    height: 500px;
-    background: #0E1728;
+    /* height: 500px; */
+    background:linear-gradient(#0E1728,#17212D)
+     
 }
 .choose .head{
     width: 100%;
@@ -354,7 +356,7 @@ header .services h4{
 
 .choose .chooseCard{
     width: 100%;
-    height: 400px;
+    /* height: 400px; */
     /* background:aqua; */
     margin-top: 50px;
     display: flex;
@@ -362,15 +364,15 @@ header .services h4{
 }
 .cards1{
     width: 20%;
-    height: 180px;
+    /* height: 180px; */
     border-radius: 10%;
     border: none;
     background: #1C2838;
 }
 
 .cards1 .clock{
-    width: 20%;
-    height: 50px;
+    width: 16%;
+    height: 40px;
     background: #133443;
     margin-top: 20px;
     margin-left: 20px;
@@ -385,7 +387,7 @@ header .services h4{
     width: 100%;
     /* height: 30px; */
     /* background-color: green; */
-    margin-top: 14px;
+    padding-top: 18px;
     padding-left: 13px;
 }
 .titleTrading h4{
@@ -394,9 +396,153 @@ header .services h4{
 .descrip{
     width: 100%;
     /* background: green; */
-    margin-top: 10px;
+    margin-top: 20px;
+    padding-bottom: 20px;
     padding-left: 14px;
 }
 .descrip p{
     color: darkgray;
+}
+
+@media screen and (max-width:430px) {
+    .choose .text {
+        width: 83%;
+        padding-left: 90px;
+    }
+    .choose .chooseCard{
+        flex-wrap: wrap;
+        margin-top: 0px;
+    }
+    .cards1{
+        width: 60%;
+        margin-top: 30px;
+    }
+
+}
+
+.aftercards{
+    width: 100%;
+    height: 50px;
+    background: #17212D;
+}   
+
+.questions{
+    width: 100%;
+    height: 500px;
+    background:linear-gradient(to bottom,#17212D,#0E1728);
+    display: flex;
+}
+.questionsText{
+    width: 40%;
+    /* height: 300px; */
+    /* background: gray; */
+}
+.frequentHead{
+    width: 100%;
+    /* height: 30px; */
+    /* background: orchid; */
+    padding-top: 30px;
+    padding-left: 50px;
+}
+.frequentHead h3{
+    color: #27B4B4;
+    padding-bottom: 10px;
+}
+.frequentHead h1{
+    color: white;
+    padding-bottom: 10px;
+}
+.frequentHead h2{
+    color: #F9F9F9;
+    font-size: 20px;
+}
+.questDescription{
+    width: 84%;
+    /* background: green; */
+    padding-left: 50px;
+    margin-top: 30px;
+}
+.questDescription p{
+    color: darkgray;
+}
+.started{
+    width: 50%;
+    /* background: aquamarine; */
+    margin-top: 30px;
+    padding-left: 50px;    
+}
+.started button{
+    border-radius: 10%;
+    border: none;
+    background: linear-gradient(to right,#5AAADF,#4BBFD6,#3DD8D0);
+    padding-left: 15px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    color: #142634;
+    font-weight: 600;
+}
+
+.frequentlyAsk{
+    width: 50%;
+    /* height: 300px; */
+    /* background: gray; */
+}
+
+.askcards{
+    width: 90%;
+    /* background-color: aqua; */
+    margin-top: 40px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 18px;
+    padding-right: 20px;
+}
+.askcards p{
+    color: darkgray;
+}
+.addsign{
+    width: 5%;
+    border-radius: 100%;
+    background:#0F2533;
+    text-align: center;
+    cursor: pointer;
+}
+.addsign h3{
+    color: darkgray;
+}
+
+@media screen and (max-width:780px) {
+    .questionsText{
+        width: 45%;
+        font-size: 15px;
+    }
+    .questDescription{
+        width: 90%;
+    }
+    .addsign{
+        width: 8%;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .questions{
+        flex-wrap: wrap;
+        height: max-content;
+    }
+    .questionsText{
+        width: 100%;
+    }
+    .frequentlyAsk{
+        width: 100%;
+    }
+    .askcards{
+        margin-left: 30px;
+    }
+    .addsign{
+        width: 8%;
+    }
 }
